@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+	<ul>
+		<h1>List of Articles</h1>
+		<% articles.forEach(function(article, index) { %>
+			<li><a href=""><%= article.headline %></li>
+<!-- 	<li><%= article.author %></li>
+			<li><%= article.summary %></li> -->
+		<% }) %>
+		<button><a href="/articles/new">Create New</a></button>
+		<button><a href="/site/homepage">Home</a></button>
+	</ul>
+</body>
+
+</html> 
